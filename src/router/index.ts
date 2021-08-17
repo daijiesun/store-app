@@ -21,9 +21,9 @@ const routes: Array<RouteRecordRaw> = [
   }
 ]
 
-const hash: boolean = true;
+const hash: boolean = false;
 const router = createRouter({
-  history: hash ? createWebHashHistory() : createWebHistory(),
+  history: hash ? createWebHashHistory() : createWebHistory('/store-app/'),
   routes
 })
 
