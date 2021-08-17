@@ -24,7 +24,7 @@ export default defineConfig({
       "@": path.join(__dirname, 'src')
     }
   },
-  base: process.env.VUE_APP_ENV === "production" ? "/store-app/" : "./",
+  base: "/store-app/",//process.env.VUE_APP_ENV === "production" ? "/store-app/" : "./",
   build:{
     outDir: "docs"
   }
