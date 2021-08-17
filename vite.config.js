@@ -18,10 +18,13 @@ export default defineConfig({
       }, ],
     }),
   ],
-  resolve:{
+  resolve: {
     // extensions: ['.vue', '.js', 'ts', '.mjs'],
-    alias:{
-      "@": path.join(__dirname,'src')
+    alias: {
+      "@": path.join(__dirname, 'src')
     }
+  },
+  build: {
+    outDir: "docs"
   }
 })
