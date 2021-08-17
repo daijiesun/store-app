@@ -9,3 +9,4 @@ import Vant from 'vant'
 
 const AppInstance = createApp(App)
 AppInstance.use(store).use(router).use(Vant).mount('#app')
+console.log(process.env.NODE_ENV)
