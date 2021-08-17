@@ -22,8 +22,9 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const hash: boolean = false;
+const baseUrl:string = process.env.NODE_ENV === "production" ? "/store-app/" : "";
 const router = createRouter({
-  history: hash ? createWebHashHistory() : createWebHistory('/store-app/'),
+  history: hash ? createWebHashHistory() : createWebHistory(baseUrl),
   routes
 })
 
