@@ -1,7 +1,7 @@
 <!--  -->
 <template>
   <div class="goods-item">
-    <van-image width="100%" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+    <van-image width="100%" :src="goods.avatar"/>
     <div class="goods-item-info">
       <div class="title">
         <span>{{goods.title}}</span>
@@ -17,7 +17,7 @@
 <script lang='ts'>
 import { reactive, toRefs } from "vue";
 import { Options, Vue } from "vue-class-component";
-import { Goods } from "@/model/goods";
+import { Goods } from "@/types/goods";
 export default {
   name: "GoodsPanel",
   props: {

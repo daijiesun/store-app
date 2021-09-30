@@ -21,11 +21,14 @@ export default defineConfig({
   resolve: {
     // extensions: ['.vue', '.js', 'ts', '.mjs'],
     alias: {
-      "@": path.join(__dirname, 'src')
+      "@": path.resolve(__dirname, 'src')
     }
   },
-  base: process.env.NODE_ENV === "production" ? "/store-app/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/" : "/",
   build:{
-    outDir: "docs"
+    outDir: "web-app"
+  },
+  server:{
+    port: 8000
   }
 })

@@ -6,7 +6,7 @@ import 'vant/lib/index.css'
 import Vant from 'vant'
 
 // import VantComponent from './utils/vantInstall'
-
 const AppInstance = createApp(App)
-AppInstance.use(store).use(router).use(Vant).mount('#app')
-console.log(process.env.NODE_ENV)
+AppInstance.use(router).use(Vant).mount('#app');
+
+store.init()
